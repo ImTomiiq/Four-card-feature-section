@@ -24,8 +24,73 @@ $color-grayish-blue: hsl(229, 6%, 66%);
 $color-very-light-gray: hsl(0, 0%, 98%);
 
 .container {
-  background-color: red;
+  background-color: $color-very-light-gray;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 5rem 3rem;
+}
+
+.text {
+  color: $color-very-dark-blue;
+  &__container {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__subheader {
+    font-weight: 400;
+    font-size: 1em;
+  }
+  &__header {
+    font-weight: 600;
+    font-size: 1em;
+    margin-block: 0.5rem;
+  }
+  &__content {
+    font-weight: 400;
+    font-size: 0.75em;
+  }
+}
+
+.card {
+  font-size: inherit;
+  background-color: white;
+  padding: 2rem 2.75rem;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 7px 15px 5px rgba(0, 0, 0, 0.09);
+  &:nth-of-type(2) {
+    margin-top: 5rem;
+    border-top: 4px solid $color-cyan;
+  }
+  &:nth-of-type(3) {
+    border-top: 4px solid $color-red;
+  }
+  &:nth-of-type(4) {
+    border-top: 4px solid $color-orange;
+  }
+  &:nth-of-type(5) {
+    border-top: 4px solid $color-blue;
+  }
+
+  &:nth-of-type(3),
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+    margin-top: 3rem;
+  }
+
+  &__header {
+    font-size: 2em;
+    padding-bottom: 1rem;
+    color: $color-very-dark-blue;
+  }
+  &__content {
+    font-size: 1.25em;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    color: $color-grayish-blue;
+  }
+  &__img {
+    font-size: 2em;
+    margin-left: 75%;
+  }
 }
